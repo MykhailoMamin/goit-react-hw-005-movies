@@ -1,0 +1,82 @@
+.castSection {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #303030;
+}
+
+.castTitle {
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Cast grid */
+.castList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Actor card */
+.castItem {
+    overflow: hidden;
+    background-color: #1c1c1c;
+    border: 1px solid #303030;
+    border-radius: 10px;
+
+    transition: transform 250ms ease, border-color 250ms ease;
+}
+
+.castItem:hover {
+    transform: translateY(-4px);
+    border-color: #ff4d4d;
+}
+
+/* Actor image */
+.castImage,
+.noImage {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    background-color: #292929;
+}
+
+.noImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Actor information */
+.castName {
+    margin: 12px 12px 4px;
+    color: #f5f5f5;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.castCharacter {
+    margin: 0 12px 14px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.error {
+    color: #ff5c5c;
+    font-size: 15px;
+}
+
+.empty {
+    color: #aaa;
+    font-size: 15px;
+}

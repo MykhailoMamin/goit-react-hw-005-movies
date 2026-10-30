@@ -1,0 +1,81 @@
+.reviewsSection {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #303030;
+}
+
+.reviewsTitle {
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Reviews list */
+.reviewsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Review card */
+.reviewItem {
+    padding: 20px;
+
+    background-color: #1c1c1c;
+    border: 1px solid #303030;
+    border-radius: 10px;
+
+    transition: border-color 250ms ease;
+}
+
+.reviewItem:hover {
+    border-color: #484848;
+}
+
+/* Author */
+.reviewAuthor {
+    margin: 0 0 14px;
+    padding-bottom: 12px;
+
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #353535;
+}
+
+/* Review text */
+.reviewContent {
+    margin: 0;
+
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.8;
+
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+/* Empty state */
+.empty {
+    padding: 20px;
+
+    color: #aaa;
+    font-size: 15px;
+    text-align: center;
+
+    background-color: #1c1c1c;
+    border: 1px solid #303030;
+    border-radius: 10px;
+}
+
+/* Error */
+.error {
+    color: #ff5c5c;
+    font-size: 15px;
+}
